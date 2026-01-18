@@ -6,28 +6,28 @@
 
 @layer base {
   :root {
-    /* Red & Orange Theme */
-    --background: 15 20% 6%;
+    /* Red/Orange Background + Blue/Pink Accents Theme */
+    --background: 15 45% 8%;
     --foreground: 30 15% 95%;
 
-    --card: 15 18% 10%;
+    --card: 20 40% 12%;
     --card-foreground: 30 15% 95%;
 
-    --popover: 15 18% 10%;
+    --popover: 20 40% 12%;
     --popover-foreground: 30 15% 95%;
 
-    /* Red Primary */
-    --primary: 0 85% 55%;
+    /* Sky Blue Primary */
+    --primary: 199 89% 55%;
     --primary-foreground: 0 0% 100%;
 
-    /* Orange Secondary */
-    --secondary: 25 95% 55%;
+    /* Pink Secondary */
+    --secondary: 330 70% 55%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 15 15% 15%;
-    --muted-foreground: 15 10% 60%;
+    --muted: 20 35% 15%;
+    --muted-foreground: 25 15% 60%;
 
-    --accent: 25 95% 50%;
+    --accent: 330 70% 60%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 72% 51%;
@@ -39,51 +39,51 @@
     --warning: 38 92% 50%;
     --warning-foreground: 0 0% 0%;
 
-    --border: 15 15% 18%;
-    --input: 15 15% 18%;
-    --ring: 0 85% 55%;
+    --border: 25 30% 20%;
+    --input: 25 30% 20%;
+    --ring: 199 89% 55%;
 
     --radius: 0.75rem;
 
-    /* Custom Gradient Variables */
-    --glow-primary: 0 0 30px hsl(0 85% 55% / 0.3);
-    --glow-strong: 0 0 50px hsl(25 95% 55% / 0.4);
-    --gradient-cyber: linear-gradient(135deg, hsl(0 85% 55%) 0%, hsl(25 95% 55%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(15 20% 6%) 0%, hsl(15 18% 4%) 100%);
-    --gradient-card: linear-gradient(145deg, hsl(15 18% 12%) 0%, hsl(15 18% 8%) 100%);
-    --gradient-hero: linear-gradient(135deg, hsl(15 20% 6%) 0%, hsl(10 25% 10%) 50%, hsl(25 30% 12%) 100%);
+    /* Custom Gradient Variables - Blue/Pink gradients on Orange/Red background */
+    --glow-primary: 0 0 30px hsl(199 89% 55% / 0.3);
+    --glow-strong: 0 0 50px hsl(330 70% 55% / 0.4);
+    --gradient-cyber: linear-gradient(135deg, hsl(199 89% 55%) 0%, hsl(330 70% 55%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(15 45% 8%) 0%, hsl(10 40% 5%) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(20 40% 14%) 0%, hsl(15 35% 10%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(10 50% 8%) 0%, hsl(20 45% 10%) 50%, hsl(25 50% 12%) 100%);
     
     /* Grid pattern */
-    --grid-color: hsl(0 85% 55% / 0.05);
+    --grid-color: hsl(199 89% 55% / 0.05);
 
-    --sidebar-background: 15 18% 8%;
+    --sidebar-background: 20 40% 10%;
     --sidebar-foreground: 30 15% 95%;
-    --sidebar-primary: 0 85% 55%;
+    --sidebar-primary: 199 89% 55%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 15 15% 15%;
+    --sidebar-accent: 20 35% 15%;
     --sidebar-accent-foreground: 30 15% 95%;
-    --sidebar-border: 15 15% 18%;
-    --sidebar-ring: 0 85% 55%;
+    --sidebar-border: 25 30% 20%;
+    --sidebar-ring: 199 89% 55%;
   }
 
   .light {
-    --background: 0 0% 100%;
-    --foreground: 15 20% 10%;
-    --card: 30 20% 98%;
-    --card-foreground: 15 20% 10%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 15 20% 10%;
-    --primary: 0 85% 50%;
+    --background: 30 95% 95%;
+    --foreground: 15 30% 15%;
+    --card: 35 90% 97%;
+    --card-foreground: 15 30% 15%;
+    --popover: 30 95% 98%;
+    --popover-foreground: 15 30% 15%;
+    --primary: 199 89% 48%;
     --primary-foreground: 0 0% 100%;
-    --secondary: 25 95% 92%;
-    --secondary-foreground: 25 95% 40%;
-    --muted: 30 15% 96%;
-    --muted-foreground: 15 15% 40%;
-    --accent: 25 80% 92%;
-    --accent-foreground: 25 95% 40%;
-    --border: 30 20% 90%;
-    --input: 30 20% 90%;
-    --ring: 0 85% 50%;
+    --secondary: 330 70% 92%;
+    --secondary-foreground: 330 70% 40%;
+    --muted: 25 50% 92%;
+    --muted-foreground: 20 25% 40%;
+    --accent: 330 60% 92%;
+    --accent-foreground: 330 70% 40%;
+    --border: 25 40% 85%;
+    --input: 25 40% 85%;
+    --ring: 199 89% 48%;
   }
 }
 
@@ -162,8 +162,8 @@
 }
 
 @keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 20px hsl(0 85% 55% / 0.3); }
-  50% { box-shadow: 0 0 40px hsl(25 95% 55% / 0.5); }
+  0%, 100% { box-shadow: 0 0 20px hsl(199 89% 55% / 0.3); }
+  50% { box-shadow: 0 0 40px hsl(330 70% 55% / 0.5); }
 }
 
 @keyframes slide-up {
